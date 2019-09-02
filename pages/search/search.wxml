@@ -1,0 +1,25 @@
+<view class='search-container'>
+  <view class='search' bindtap='searchTap'>
+    <icon type='search' size='40rpx' color='#474747'></icon>
+    <input placeholder='搜索垃圾对应分类' bindinput='bindinput' focus='true'></input>
+  </view>
+  <text class='search-text' bindtap='search'>搜索</text>
+</view>
+
+<scroll-view class='scrollview' scroll-y='true' hidden='{{hiddenscroll}}'>
+  <view wx:for='{{bindSource}}'>
+    <view class='search-item' bindtap='itemClick' data-itemindex='{{index}}'>
+      <view class='trush-name'>{{item.name}}</view>
+      <view class='trush-classify'>
+        <text wx:if='{{item.type == 0}}'>可回收垃圾</text>
+        <text wx:if='{{item.type == 1}}'>有害垃圾</text>
+        <text wx:if='{{item.type == 2}}'>湿垃圾</text>
+        <text wx:if='{{item.type == 3}}'>干垃圾</text>
+      </view>
+      <view class='icon-container'>
+        <image class="item-icon" src='/icon/right_arrow.png'></image>
+      </view>
+    </view>
+    <view class="divider"></view>
+  </view>
+</scroll-view>

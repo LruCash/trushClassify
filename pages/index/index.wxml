@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<import src='../template/swiperItem.wxml' />
+
+<view class='container'>
+  <view class="searchContainer" style="width:100%">
+  <view class='search' bindtap='searchTap'>
+    <icon type='search' size='40rpx' color='#474747'></icon>
+    <input class="hint_text" placeholder='搜索垃圾对应分类' disabled='true'></input>
+    <image class="cameraIcon" catchtap="getBase64Image" src="../../icon/camera.png" style="width:55rpx;height:55rpx"></image>
+  </view>
+
+  </view>
+  
+  <view class='header_tab'>
+    <view class='topTab' bindtap='tabClick' data-tab_index='0'>湿垃圾</view>
+    <view class='topTab' bindtap='tabClick' data-tab_index='1'>干垃圾</view>
+    <view class='topTab' bindtap='tabClick' data-tab_index='2'>可回收物</view>
+    <view class='topTab' bindtap='tabClick' data-tab_index='3'>有害垃圾</view>
+  </view>
+
+  <view class='indicator'>
+    <view class='{{swiperIndex==0? "wet_active":""}} indicator_tab'></view>
+    <view class='{{swiperIndex==1? "dry_active":""}} indicator_tab'></view>
+    <view class='{{swiperIndex==2? "recycle_active":""}} indicator_tab'></view>
+    <view class='{{swiperIndex==3? "harmful_active":""}} indicator_tab'></view>
+  </view>
+
+
+
+  <swiper style="height: {{windowHeight}}px" bindchange="tabChange" current='{{swiperIndex}}'>
+    <swiper-item>
+      <scroll-view style="height: 100%;" scroll-y scroll-with-animation scroll-top="{{scrollTop0}}px">
+        <template is='wetItem' data='{{wetTrush}}' />
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view style="height: 100%;" scroll-y scroll-with-animation scroll-top="{{scrollTop0}}px">
+        <template is='dryItem' data='{{dryTrush}}' />
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view style="height: 100%;" scroll-y scroll-with-animation scroll-top="{{scrollTop0}}px">
+        <template is='recycleItem' data='{{recycleTrush}}' />
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view style="height: 100%;" scroll-y scroll-with-animation scroll-top="{{scrollTop0}}px">
+        <template is='harmfulItem' data='{{harmfulTrush}}' />
+      </scroll-view>
+    </swiper-item>
+
+  </swiper>
+
+</view>

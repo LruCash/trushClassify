@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="name">{{trushName}}</view>
+  <view class="type">属于{{trushType}}</view>
+  <image class="trush_image" src="{{trushImage}}" style="width:200rpx" mode="widthFix"></image>
+
+  <view class="throw_tip_title">{{trushType}}投放指导</view>
+  <text class="throw_tip">{{throwTip}}</text>  
+  <view class="list_title">常见{{trushType}}</view>
+  <view class="list_content">{{list_content}}</view>
+</view>

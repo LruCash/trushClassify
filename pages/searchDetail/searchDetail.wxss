@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.name {
+  margin-top: 30rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.trush_image {
+  margin-top: 25rpx;
+}
+
+.type {
+  font-size: 40rpx;
+  margin-top: 30rpx;
+  font-weight: bold;
+}
+
+.throw_tip_title {
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  position: relative;
+  width: 100%;
+  font-size: 33rpx;
+  align-items: flex-start;
+}
+
+.throw_tip {
+  color: black;
+  justify-content: start;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.list_title {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  position: relative;
+  width: 100%;
+  font-size: 33rpx;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.list_content {
+   color: black;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  justify-content: start;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}

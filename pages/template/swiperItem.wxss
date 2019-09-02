@@ -1,0 +1,189 @@
+.trushView {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/**湿垃圾定义 **/
+
+.trushHeader {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border: 1px solid #644034;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.trushDefine {
+  display: flex;
+  margin-top: 13rpx;
+  margin-bottom: 13rpx;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wetDesc {
+  font-size: 26rpx;
+  color: #644034;
+}
+
+.defineLeft {
+  margin-left: 20rpx;
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.trushImage {
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.defineRight {
+  margin-right: 20rpx;
+  line-height: 38rpx;
+  margin-left: 30rpx;
+}
+
+.wet_classift_divider {
+  font-size: 30rpx;
+  width: 100%;
+  background: #644034;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+  color: white;
+  margin-bottom: 10rpx;
+}
+
+.throwTip_wet {
+  line-height: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 13rpx;
+  margin-bottom: 12rpx;
+  font-size: 28rpx;
+  color: #644034;
+}
+
+/**常见垃圾列表 **/
+
+.trushList {
+  width: 100%;
+  display: flex;
+  padding: 5rpx;
+  flex-direction: column;
+}
+
+.evenLine {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  width: 100%;
+  font-size: 15px;
+  padding-left: 50rpx;
+}
+
+.oddLine {
+  font-size: 15px;
+  padding-bottom: 10rpx;
+  padding-top: 10rpx;
+  width: 100%;
+  padding-left: 50rpx;
+  background: #E9F2F1;
+}
+
+.evenLine.firstLine {
+  margin-top: 30rpx;
+}
+
+/**干垃圾**/
+
+.dryDesc {
+  font-size: 26rpx;
+  color: #2b2623;
+}
+
+.dry_classift_divider {
+  font-size: 30rpx;
+  width: 100%;
+  background: #2b2623;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+  color: white;
+  margin-bottom: 10rpx;
+}
+
+.throwTip_dry {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 13rpx;
+  font-size: 28rpx;
+  color: #2b2623;
+}
+
+/**可回收物 **/
+
+.recycleDesc {
+  font-size: 26rpx;
+  color: #02427b;
+}
+
+.recycle_classift_divider {
+  font-size: 30rpx;
+  width: 100%;
+  background: #02427b;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+  color: white;
+  margin-bottom: 10rpx;
+}
+
+.throwTip_recycle {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 13rpx;
+  font-size: 28rpx;
+  color: #02427b;
+}
+
+/**有害垃圾 **/
+
+.harmfulDesc {
+  font-size: 26rpx;
+  color: #d83422;
+}
+
+.harmful_classift_divider {
+  font-size: 30rpx;
+  width: 100%;
+  background: #d83422;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+  color: white;
+  margin-bottom: 10rpx;
+}
+
+.throwTip_harmful {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 13rpx;
+  font-size: 28rpx;
+  color: #d83422;
+}
+
+.throwTip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.throw_bottom{
+  padding-bottom: 13rpx;
+}

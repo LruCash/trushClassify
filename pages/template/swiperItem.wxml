@@ -1,0 +1,116 @@
+<!--湿垃圾-->
+<template name='wetItem'>
+  <view class='trushView'>
+    <view class='trushHeader'>
+      <view class='trushDefine'>
+        <view class='defineLeft'>
+          <image class='trushImage' mode='widthFix' src='/icon/trush/wet_icon.jpeg'></image>
+        </view>
+        <view class='defineRight'>
+          <text class='wetDesc'>湿垃圾是指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物</text>
+        </view>
+      </view>
+
+        <text class='wet_classift_divider'>湿垃圾投放要求</text>
+      <view class='throwTip'>
+        <text class='throwTip_wet'>• 纯流质的食物垃圾，如牛奶饮料等，应该直接倒入下水口。</text>
+        <text class='throwTip_wet'>• 有包装的湿垃圾应将包装物去除后分类投放，包装物应投放到对应的可回收物或者干垃圾收集容器。</text>
+        <text class='throwTip_wet,throw_bottom'>• 盛放湿垃圾的容器，如塑料袋等，在投放时应予去除。</text>
+      </view>
+    </view>
+
+    <view class='trushList' wx:for='{{wetTrush}}' wx:key='*this'>
+      <view class='{{index%2==0? "evenLine":"oddLine"}}  {{index==0? "firstLine":""}}'>{{item}}</view>
+    </view>
+
+  </view>
+</template>
+
+<!--干垃圾-->
+<template name='dryItem'>
+  <view class='trushView'>
+    <view class='trushHeader'>
+      <view class='trushDefine'>
+        <view class='defineLeft'>
+          <image class='trushImage' mode='widthFix' src='/icon/trush/dry_icon.jpeg'></image>
+        </view>
+        <view class='defineRight'>
+          <text class='dryDesc'>干垃圾是指除有害垃圾、可回收物、湿垃圾以外的其他生活废弃物</text>
+        </view>
+      </view>
+
+      <text class='dry_classift_divider'>干垃圾投放要求</text>
+      <view class='throwTip'>
+        <text class='throwTip_dry'>• 尽量沥干水分。</text>
+        <text class='throwTip_dry,throw_bottom'>• 难以辨识类别的生活垃圾投入干垃圾容器内。</text>
+      </view>
+    </view>
+
+    <view class='trushList' wx:for='{{dryTrush}}' wx:key='*this'>
+      <view class='{{index%2==0? "evenLine":"oddLine"}}  {{index==0? "firstLine":""}}'>{{item}}</view>
+    </view>
+
+  </view>
+</template>
+
+<!--可回收垃圾-->
+<template name='recycleItem'>
+  <view class='trushView'>
+    <view class='trushHeader'>
+      <view class='trushDefine'>
+        <view class='defineLeft'>
+          <image class='trushImage' mode='widthFix' src='/icon/trush/recycle_icon.jpeg'></image>
+        </view>
+        <view class='defineRight'>
+          <text class='recycleDesc'>可回收物是指适宜回收和可循环再利用的废弃物。主要包括玻璃、废金属、废塑料、废纸张费织物等。</text>
+        </view>
+      </view>
+
+      <text class='recycle_classift_divider'>可回收物投放要求</text>
+      <view class='throwTip'>
+        <text class='throwTip_recycle'>• 轻轻投放。</text>
+        <text class='throwTip_recycle'>• 清洁干燥，避免污染。</text>
+        <text class='throwTip_recycle'>• 废纸尽量平整。</text>
+        <text class='throwTip_recycle'>• 立体包装请清空内容物，清洁后压扁投放。</text>
+        <text class='throwTip_recycle,throw_bottom'>• 有尖锐边角的，应包裹后投放。</text>
+      </view>
+    </view>
+
+    <view class='trushList' wx:for='{{recycleTrush}}' wx:key='*this'>
+      <view class='{{index%2==0? "evenLine":"oddLine"}}  {{index==0? "firstLine":""}}'>{{item}}</view>
+    </view>
+
+  </view>
+</template>
+
+<!--有害垃圾-->
+<template name='harmfulItem'>
+  <view class='trushView'>
+    <view class='trushHeader'>
+      <view class='trushDefine'>
+        <view class='defineLeft'>
+          <image class='trushImage' mode='widthFix' src='/icon/trush/harmful_icon.jpeg'></image>
+        </view>
+        <view class='defineRight'>
+          <text class='harmfulDesc'>有害垃圾是指对人体健康或者自然环境造成直接或者潜在危险的零星废弃物，单位集中产生的除外。主要包括废电池、废灯管、废药品、废油漆桶等。</text>
+        </view>
+      </view>
+
+      <text class='harmful_classift_divider'>有害垃圾投放要求</text>
+
+      <view class='throwTip'>
+        <text class='throwTip_harmful'>• 充电电池、纽扣电池、蓄电池投放时请注意轻放。</text>
+        <text class='throwTip_harmful'>• 油漆桶、杀虫剂如有残留请密闭后投放。</text>
+        <text class='throwTip_harmful'>• 荧光灯、节能灯易破损请连带包装或包裹后轻放。</text>
+        <text class='throwTip_harmful,throw_bottom'>• 废药品及其包装连带包装一并投放。</text>
+      </view>
+
+
+    </view>
+
+    <view class='trushList' wx:for='{{harmfulTrush}}' wx:key='*this'>
+      <view class='{{index%2==0? "evenLine":"oddLine"}}  {{index==0? "firstLine":""}}'>{{item}}</view>
+    </view>
+
+  </view>
+</template>
